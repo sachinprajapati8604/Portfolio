@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Sachin Prajapati-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sachin Prajapati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="home">
+        <div class="heading">
+            <div>Hello, I'm </div>
+            <div class="name">Sachin Prajapati </div>
+        </div>
+    </div>
+
+    <div class="container my-4" id="about">
+        <h1 class="text-center __h1 ">About</h1>
+        <div class="border-line"></div>
+    
+        <div class="row g-2">
+            <div class="col-4 img-box">
+                <img src="https://scontent.fknu1-2.fna.fbcdn.net/v/t1.6435-9/s851x315/29066357_2047657135523289_6807119922565480448_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=da31f3&_nc_ohc=JgAJrDgvDwkAX89KnlU&tn=AFy11fFdJivHP7Wc&_nc_ht=scontent.fknu1-2.fna&oh=d30cdcceae32fa8b0176744bec5986af&oe=6136E2C2"
+                    alt="image not found">
+    
+            </div>
+            <div class="col-8 content-box">
+                <p class="__para"> This is Sachin Prajapati, a student of B.tech (CSE) 4th year from Bundelkhand
+                    University. I belong to Unnao UP.
+                    I have experience and knowledge of programming. I completed certain projects in web development,
+                    Android App, Python project. I completed training from different popular websites and I have
+                    certificates in Java, Python, C, PHP, Html, CSS, javascript, Bootstrap. I am working regularly to
+                    update myself with the new era of Computer science.</p>
+                <div class="btn">
+                    <a class="btn btn-success" href="mailto:sachinprajapati599@gmail.com">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <hr>
+    <div class="container my-4" id="education">
+        <h2 class="text-center __h1">Education</h2>
+        <div class="border-line"></div>
+        <div class="row education-row">
+            <div class="col-12 item ">
+                <p>2017-2021</p>
+                <h3 class="__h2">Bundelkhand University</h3>
+                <h5>Bachelor of Technology</h5>
+                <p class="__p2">Computer Science and Engineering</p>
+            </div>
+            <div class="col-12 item">
+                <p>2014-2015</p>
+                <h3 class="__h2">Shyam lal inter college , Nawabganj Unnao</h3>
+                <p class="__p2">InterMediate</p>
+            </div>
+            <div class="col-12 item">
+                <p>2012-2013</p>
+                <h3 class="__h2">Shyam lal inter college , Nawabganj Unnao</h3>
+                <p class="__p2">High School</p>
+            </div>
+        </div>
+    </div>
+ <hr>
+    <div class="container-fluid" id="projects">
+        <h2 class="text-center __h1 text-light my-2">Projects</h2>
+        <div class="border-line"></div>
+        <div class="filter-box my-4 ">
+            <select onchange="updateFilter()" class="form-select" aria-label="Default select example" id="selectUnit" name="selectUnit">
+                <option selected>Choose to apply Filter</option>
+                <option value="1">Frontend </option>
+                <option value="2">Backend</option>
+              </select>
+             
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="row">
+            <!-- fetching data from javascript array object -->
+        </div>
+    </div>
+    
+
+    <div class="footer" id="footer">
+        <div class="myfooter container-fluid  text-light mt-4 p-3">
+            <h4 class="text-center">Follow me </h4>
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/bullet.raja.1998"><i class="fab fa-facebook"
+                            aria-hidden="true"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/SachinP40"><i class="fab fa-twitter"
+                            aria-hidden="true"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/prajapati_rangbaz?r=nametag"><i
+                            class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a class="github" href="https://github.com/sachinprajapati8604"><i class="fab fa-github"
+                            aria-hidden="true"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/sachin-prajapati-8b1993188"><i
+                            class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- font awesome icon cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sweetalert cdn........ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
