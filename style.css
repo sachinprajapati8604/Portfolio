@@ -9,40 +9,48 @@ body {
   /* position: fixed; */
   width: 100%;
 }
-.navbar ul li{
+.navbar ul li {
   font-size: 1.2rem;
   font-weight: 500;
-  
+}
+.navbar ul li a {
+  padding: 1px;
+}
+.navbar ul li a:hover {
+  border-bottom: 2px solid #ff4600;
+  padding: 0;
 }
 .container {
   margin-top: 80px;
   margin-bottom: 50px;
 }
 #home {
+  background-image: url(img/v2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
-  background: #11998e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #38ef7d,
-    #11998e
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: #000;
+  position: relative;
+  /* background: #11998e; 
   background: linear-gradient(
     to top,
     #38ef7d,
     #11998e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );  */
 }
-.type{
+.type {
   margin: 0;
   font-size: 2.5rem;
 }
 .heading {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 10%;
+  left: 5%;
   font-size: 5rem;
-  
+}
+.heading > div {
+  line-height: 5rem;
 }
 
 .heading .name {
@@ -65,6 +73,13 @@ body {
   margin-top: 0;
   width: 10%;
   margin-bottom: 50px;
+}
+
+.btn-box .btn {
+  font-size: 1.5rem;
+  padding: 15px;
+  background: #ff4600;
+  background: linear-gradient(to right, #ffba00, #ff4600);
 }
 
 .__h1 {
@@ -127,6 +142,98 @@ body {
   width: 18rem;
 }
 
+.my-projectcol:hover {
+  background: #1e2232;
+  color: #fff;
+}
+
+/* skill bar css begin */
+
+.progress-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.progress {
+  height: 26px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress .progress-bar {
+  box-shadow: none;
+  border-radius: 0;
+  position: relative;
+  -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes, animate-positive 4s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes, animate-positive 4s;
+}
+
+.progress-bar .progress-value {
+  width: 50px;
+  height: 100%;
+  background: #000;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  line-height: 27px;
+  top: 0;
+  left: 0;
+}
+
+.progress:after,
+.progress .progress-bar:after,
+.progress .progress-value:after {
+  content: "";
+  border-left: 13px solid rgba(0, 0, 0, 0.1);
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -13px;
+}
+
+.progress.red .progress-bar:after {
+  border-left-color: #d9534f;
+}
+
+.progress .progress-value:after {
+  border-left: 13px solid #000;
+}
+
+.progress.blue .progress-bar:after {
+  border-left-color: #5bc0de;
+}
+
+.progress.yellow .progress-bar:after {
+  border-left-color: #f0ad4e;
+}
+
+.progress.green .progress-bar:after {
+  border-left-color: #5cb85c;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
+
+/* skill bar css end */
+
 /* //fotter css begin */
 
 .myfooter {
@@ -167,6 +274,12 @@ body {
   .heading .name {
     font-size: 2.4rem;
   }
+  .heading > div {
+    line-height: 2.4rem;
+  }
+  .type {
+    font-size: 1.2rem;
+  }
   .img-box,
   .content-box {
     width: 100%;
@@ -176,9 +289,6 @@ body {
     font-size: 3rem;
   }
   .__para {
-    font-size: 1.2rem;
-  }
-  .type{
     font-size: 1.2rem;
   }
 }

@@ -19,7 +19,8 @@ let ProjectList = [
         "hosted_url": "https://spweather.netlify.app/",
         "github_url": "https://github.com/sachinprajapati8604/Weather_webApp",
         "date": 'July 20, 2021',
-        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript"
+        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript",
+        "Role":"Developer",
 
     },
     {
@@ -29,7 +30,9 @@ let ProjectList = [
         "hosted_url": "https://sptodos.netlify.app/",
         "github_url": "https://github.com/sachinprajapati8604/To-Do-List-JS",
         "date": 'July 30, 2021',
-        "Tech_Stack": "HTML | CSS | JavaScript"
+        "Tech_Stack": "HTML | CSS | JavaScript",
+        "Role":"Developer",
+        
     },
     {
         "id": frontend,
@@ -38,7 +41,9 @@ let ProjectList = [
         "hosted_url": "https://sponlinenotepad.netlify.app/",
         "github_url": "https://github.com/sachinprajapati8604/Online-Notepad",
         "date": 'July 27, 2021',
-        "Tech_Stack": "HTML | CSS | JavaScript"
+        "Tech_Stack": "HTML | CSS | JavaScript",
+        "Role":"Developer",
+
 
     },
     {
@@ -48,7 +53,9 @@ let ProjectList = [
         "hosted_url": "https://spweather.netlify.app/",
         "github_url": "https://github.com/sachinprajapati8604/Weather_webApp",
         "date": 'July 25, 2021',
-        "Tech_Stack": "HTML | CSS | JavaScript"
+        "Tech_Stack": "HTML | CSS | JavaScript",
+        "Role":"Developer",
+
     },
     {
         "id": frontend,
@@ -57,7 +64,9 @@ let ProjectList = [
         "hosted_url": "https://sachinprajapati8604.github.io/Tic-Tac-Toe-JS/",
         "github_url": "https://github.com/sachinprajapati8604/Tic-Tac-Toe-JS",
         "date": 'July 12, 2021',
-        "Tech_Stack": "HTML | CSS | JavaScript"
+        "Tech_Stack": "HTML | CSS | JavaScript",
+        "Role":"Developer",
+
     },
 
     {
@@ -67,7 +76,9 @@ let ProjectList = [
         "hosted_url": "http://buepaper.great-site.net/?i=1",
         "github_url": "https://github.com/sachinprajapati8604/BuBook/tree/main",
         "date": "July 20, 2019",
-        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL"
+        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
+        "Role":"Developer",
+
 
     },
     {
@@ -77,7 +88,9 @@ let ProjectList = [
         "hosted_url": "http://spurbankleid.great-site.net/",
         "github_url": "https://github.com/sachinprajapati8604/Urban-Kleid-e-commerce-website",
         "date": 'July 20, 2020',
-        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL"
+        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
+        "Role":"Developer",
+
 
     },
     {
@@ -87,7 +100,9 @@ let ProjectList = [
         "hosted_url": "http://spcodeforum.epizy.com/?i=1",
         "github_url": "https://github.com/sachinprajapati8604/Urban-Kleid-e-commerce-website",
         "date": 'July 20, 2020',
-        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL"
+        "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
+        "Role":"Developer",
+
 
     },
    
@@ -104,10 +119,11 @@ function displayProjects() {
         col.className = 'col my-2 ';
         col.innerHTML +=
             `
-        <div class="card h-100 ">
+        <div class="card h-100 my-projectcol">
         <div class="card-body">
             <h5 class="card-title __h2"> ${element.title} </h5>
             <p class="card-text">${element.desc}</p>         
+            <p class="card-text"><b>Role  </b> : ${element.Role}</p>         
             <p class="card-text"><b>Tech Stack </b> : ${element.Tech_Stack}</p>         
          </div> 
          <div class="card-footer">
