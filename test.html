@@ -1,28 +1,30 @@
-
-
-
-
 <!DOCTYPE html>
-<html>
-	<body>
-		<select id="language" onChange="update()">
-			<option value="en">English</option>
-			<option value="es">Español</option>
-			<option value="pt">Português</option>
-		</select>
-		<input type="text" id="value">
-		<input type="text" id="text">
+<html lang="en">
 
-		<script type="text/javascript">
-			function update() {
-				var select = document.getElementById('language');
-				var option = select.options[select.selectedIndex];
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-				document.getElementById('value').value = option.value;
-				document.getElementById('text').value = option.text;
-			}
+<body>
+    <h1>Hiii I'm <span class="type"></span> </h1>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['This is a JavaScript library', 'This is an ES6 module'],
+            smartBackspace: true, // Default value
+            typeSpeed:60,
+            backSpeed:60,
+            loop:true,
 
-			update();
-		</script>
-	</body>
+        });
+
+    </script>
+
+</body>
+
 </html>

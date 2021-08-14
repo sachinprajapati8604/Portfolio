@@ -9,6 +9,11 @@ body {
   /* position: fixed; */
   width: 100%;
 }
+.navbar ul li{
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+}
 .container {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -28,15 +33,21 @@ body {
     #11998e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.type{
+  margin: 0;
+  font-size: 2.5rem;
+}
 .heading {
   position: absolute;
   top: 25%;
   left: 25%;
   font-size: 5rem;
+  
 }
+
 .heading .name {
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .img-box img {
   width: 100%;
@@ -165,6 +176,9 @@ body {
     font-size: 3rem;
   }
   .__para {
+    font-size: 1.2rem;
+  }
+  .type{
     font-size: 1.2rem;
   }
 }

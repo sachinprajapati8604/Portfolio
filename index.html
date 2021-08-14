@@ -42,23 +42,39 @@
             </div>
         </div>
     </nav>
-
     <div class="container-fluid" id="home">
-        <div class="heading">
-            <div>Hello, I'm </div>
+        <div class="heading m-0 p-0">
+            <div class="">Hello, I'm </div>
             <div class="name">Sachin Prajapati </div>
+            <div class="m-0 p-0 "> <span class="type m-0 p-0"></span> </div>
         </div>
     </div>
+
+   <!-- cdn for auto typing -->
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    // script for auto typing 
+var typed = new Typed('.type', {
+    strings: ['Front End Developer', 'Back End Developer', 'Full Stack Developer','Software Engineer'],
+    smartBackspace: true, // Default value
+    typeSpeed:80,
+    backSpeed:80,
+    loop:true,
+
+});
+
+</script>
 
     <div class="container my-4" id="about">
         <h1 class="text-center __h1 ">About</h1>
         <div class="border-line"></div>
-    
+
         <div class="row g-2">
             <div class="col-4 img-box">
                 <img src="https://scontent.fknu1-2.fna.fbcdn.net/v/t1.6435-9/s851x315/29066357_2047657135523289_6807119922565480448_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=da31f3&_nc_ohc=JgAJrDgvDwkAX89KnlU&tn=AFy11fFdJivHP7Wc&_nc_ht=scontent.fknu1-2.fna&oh=d30cdcceae32fa8b0176744bec5986af&oe=6136E2C2"
                     alt="image not found">
-    
+
             </div>
             <div class="col-8 content-box">
                 <p class="__para"> This is Sachin Prajapati, a student of B.tech (CSE) 4th year from Bundelkhand
@@ -68,12 +84,12 @@
                     certificates in Java, Python, C, PHP, Html, CSS, javascript, Bootstrap. I am working regularly to
                     update myself with the new era of Computer science.</p>
                 <div class="btn">
-                    <a class="btn btn-success" href="mailto:sachinprajapati599@gmail.com">Contact me</a>
+                    <a class="btn btn-success" href="mailto:sachinprajapati599@gmail.com">Hire Me</a>
                 </div>
             </div>
         </div>
     </div>
-   <hr>
+    <hr>
     <div class="container my-4" id="education">
         <h2 class="text-center __h1">Education</h2>
         <div class="border-line"></div>
@@ -96,23 +112,24 @@
             </div>
         </div>
     </div>
- <hr>
+    <hr>
     <div class="container-fluid" id="projects">
         <h2 class="text-center __h1 text-light my-2">Projects</h2>
         <div class="border-line"></div>
-        <div class="filter-box my-4 ">
-            <select onchange="updateFilter()" class="form-select" aria-label="Default select example" id="selectUnit" name="selectUnit">
+        <!-- <div class="filter-box my-4 ">
+            <select onchange="updateFilter()" class="form-select" aria-label="Default select example" id="selectUnit"
+                name="selectUnit">
                 <option selected>Choose to apply Filter</option>
                 <option value="1">Frontend </option>
                 <option value="2">Backend</option>
-              </select>
-             
-        </div>
+            </select>
+
+        </div> -->
         <div class="row row-cols-1 row-cols-md-4 g-4" id="row">
             <!-- fetching data from javascript array object -->
         </div>
     </div>
-    
+
 
     <div class="footer" id="footer">
         <div class="myfooter container-fluid  text-light mt-4 p-3">
@@ -143,6 +160,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- sweetalert cdn........ -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
 </body>
 
 </html>
