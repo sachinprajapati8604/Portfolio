@@ -17,17 +17,23 @@ body {
   padding: 1px;
 }
 .navbar ul li a:hover {
-  border-bottom: 2px solid #ff4600;
+  border-bottom: 2px solid #dc153d;
   padding: 0;
 }
 .container {
   margin-top: 80px;
   margin-bottom: 50px;
 }
+.myname {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #243b55;
+}
 
 .type {
   margin: 0;
- font-size: 2.4rem;
+  font-size: 2.4rem;
+  color: #dc153d;
 }
 .heading {
   padding-top: 50px;
@@ -43,15 +49,15 @@ body {
 }
 
 /* landing page image up down animation  */
-.img-col{
+.img-col {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @keyframes up-down {
-  0%{
+  0% {
     transform: translateY(5px);
   }
-  100%{
+  100% {
     transform: translateY(-5px);
   }
 }
@@ -81,20 +87,21 @@ body {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 50px;
-  transition: 0.5s;
-  color: #ff4600;
-  border: 2px solid #ff4600;
+  color: #dc153d;
+  border: 2px solid #dc153d;
   text-decoration: none;
+  transition: 0.5s;
 }
-.btn:hover{
-  background: #ff4600;
+.btn:hover {
+  background: #dc153d;
   color: #fff;
 }
 
 .__h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-top: 50px;
   text-align: center;
+  font-weight: 700;
 }
 .__para {
   font-size: 1.5rem;
@@ -151,6 +158,11 @@ body {
   width: 18rem;
 }
 
+.my-projectcol {
+  border-radius: 15px 50px;
+  transition: 0.5s;
+}
+
 .my-projectcol:hover {
   background: #1e2232;
   color: #fff;
@@ -180,8 +192,11 @@ body {
   box-shadow: none;
   border-radius: 0;
   position: relative;
-  -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes, animate-positive 4s;
-  animation: 2s linear 0s normal none infinite running progress-bar-stripes, animate-positive 4s;
+  -webkit-animation: 2s linear 0s normal none infinite running
+      progress-bar-stripes,
+    animate-positive 4s;
+  animation: 2s linear 0s normal none infinite running progress-bar-stripes,
+    animate-positive 4s;
 }
 
 .progress-bar .progress-value {
@@ -231,13 +246,13 @@ body {
 
 @-webkit-keyframes animate-positive {
   0% {
-      width: 0;
+    width: 0;
   }
 }
 
 @keyframes animate-positive {
   0% {
-      width: 0;
+    width: 0;
   }
 }
 
@@ -271,8 +286,36 @@ body {
 
 /* //footer css end  */
 
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#contact-list li {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#contact-list li a:hover {
+  color: #dc153d;
+}
+
+
+.myalert{
+  background-color: #32a653;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  display: none;
+  transition: 0.5s;
+}
+
+
+
 @media screen and (max-width: 600px) {
-  
   .heading {
     font-size: 2rem;
     padding: 10px;
@@ -286,7 +329,7 @@ body {
   .type {
     font-size: 1.2rem;
   }
-  .btn-box{
+  .btn-box {
     margin-top: 20px;
   }
   .img-box,
@@ -295,7 +338,7 @@ body {
     padding: 20px;
   }
   .__h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .__para {
     font-size: 1.2rem;

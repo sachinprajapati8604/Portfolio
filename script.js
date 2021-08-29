@@ -20,7 +20,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Weather_webApp",
         "date": 'July 20, 2021',
         "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript",
-        "Role":"Developer",
+        "Role": "Developer",
 
     },
     {
@@ -31,8 +31,8 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/To-Do-List-JS",
         "date": 'July 30, 2021',
         "Tech_Stack": "HTML | CSS | JavaScript",
-        "Role":"Developer",
-        
+        "Role": "Developer",
+
     },
     {
         "id": frontend,
@@ -42,7 +42,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Online-Notepad",
         "date": 'July 27, 2021',
         "Tech_Stack": "HTML | CSS | JavaScript",
-        "Role":"Developer",
+        "Role": "Developer",
 
 
     },
@@ -54,7 +54,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Weather_webApp",
         "date": 'July 25, 2021',
         "Tech_Stack": "HTML | CSS | JavaScript",
-        "Role":"Developer",
+        "Role": "Developer",
 
     },
     {
@@ -65,7 +65,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Tic-Tac-Toe-JS",
         "date": 'July 12, 2021',
         "Tech_Stack": "HTML | CSS | JavaScript",
-        "Role":"Developer",
+        "Role": "Developer",
 
     },
 
@@ -77,7 +77,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/BuBook/tree/main",
         "date": "July 20, 2019",
         "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
-        "Role":"Developer",
+        "Role": "Developer",
 
 
     },
@@ -89,7 +89,7 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Urban-Kleid-e-commerce-website",
         "date": 'July 20, 2020',
         "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
-        "Role":"Developer",
+        "Role": "Developer",
 
 
     },
@@ -101,11 +101,11 @@ let ProjectList = [
         "github_url": "https://github.com/sachinprajapati8604/Urban-Kleid-e-commerce-website",
         "date": 'July 20, 2020',
         "Tech_Stack": "HTML | CSS | Bootstrap | JavaScript | PHP | MySQL",
-        "Role":"Developer",
+        "Role": "Developer",
 
 
     },
-   
+
 
 ]
 
@@ -127,7 +127,7 @@ function displayProjects() {
             <p class="card-text"><b>Tech Stack </b> : ${element.Tech_Stack}</p>         
          </div> 
          <div class="card-footer">
-         <a href="${element.hosted_url}" target="_blank" class="btn btn-info btn-sm">Live Demo</a>
+         <a href="${element.hosted_url}" target="_blank" class="btn btn-info btn-sm mx-4">Live Demo</a>
          <a href="${element.github_url}" target="_blank" class="font-icon">   <i class="fab fa-github"></i> </a>
          </div>         
         </div>
@@ -154,19 +154,19 @@ function updateFilter() {
         filterProject = ProjectList.filter(function fun(el) {
             return el.id == 1;
         })
-  
+
         console.log(filterProject)
     } else if (option === "2") {
         filterProject = ProjectList.filter(function fun(el) {
             return el.id == 1;
         })
         console.log(filterProject)
-    
+
 
     } else {
         filterProject = ProjectList;
         console.log(filterProject)
-       
+
     }
 }
 
@@ -175,3 +175,34 @@ updateFilter();
 console.log(filterProject);
 
 */
+
+
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    // console.log("calling")
+
+    //get values 
+    let name = getInputVal('name');
+    let email = getInputVal('email');
+    let message = getInputVal('message');
+
+    let alert = document.querySelector('.myalert');
+    if (name !== "" && email !== "" && message !== "") {
+        alert.innerHTML = `Thanks ${name}, Your response has been recieved.`;
+        alert.style.display = "block";
+    }
+
+
+    setTimeout(() => {
+        alert.style.display = "none";
+    }, 3000);
+
+    document.getElementById('contactForm').reset();
+
+})
+
+// funtion to get form values 
+
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
