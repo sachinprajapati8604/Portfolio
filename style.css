@@ -301,8 +301,7 @@ a {
   color: #dc153d;
 }
 
-
-.myalert{
+.myalert {
   background-color: #32a653;
   color: #fff;
   text-align: center;
@@ -313,6 +312,17 @@ a {
   transition: 0.5s;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 
 @media screen and (max-width: 600px) {
