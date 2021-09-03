@@ -189,6 +189,19 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 
     let alert = document.querySelector('.myalert');
     if (name !== "" && email !== "" && message !== "") {
+        //adding fire base to store userdata
+        const response =  fetch('https://react-contact-form-5d8e6-default-rtdb.firebaseio.com/contactform.json', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                message,
+            }),
+        })
+             
         alert.innerHTML = `Thanks ${name}, Your response has been recieved.`;
         alert.style.display = "block";
     }
