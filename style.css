@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .navbar {
   /* position: fixed; */
@@ -17,7 +19,7 @@ body {
   padding: 1px;
 }
 .navbar ul li a:hover {
-  border-bottom: 2px solid #dc153d;
+  border-bottom: 2px solid #7e0b0b;
   padding: 0;
 }
 .container {
@@ -33,7 +35,7 @@ body {
 .type {
   margin: 0;
   font-size: 2.4rem;
-  color: #dc153d;
+  color: #7e0b0b;
 }
 .heading {
   padding-top: 50px;
@@ -69,6 +71,7 @@ body {
 }
 .content-box,
 .img-box {
+  text-align: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -87,13 +90,13 @@ body {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 50px;
-  color: #dc153d;
-  border: 2px solid #dc153d;
+  color: #7e0b0b;
+  border: 2px solid #7e0b0b;
   text-decoration: none;
   transition: 0.5s;
 }
 .btn:hover {
-  background: #dc153d;
+  background: #7e0b0b;
   color: #fff;
 }
 
@@ -109,35 +112,56 @@ body {
 
 .__h2 {
   font-weight: 700;
-  color: #0075ff;
+  color: #7e0b0b;
 }
 .__p2 {
   font-size: 1rem;
   font-weight: 600;
 }
-
 #education {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 .education-row {
-  border-left: 3px dotted #38ef7d;
-  margin-left: 30px;
-}
-.item {
-  margin-bottom: 25px;
   position: relative;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 3px;
+  height: calc(100% + 20px);
+  background-color: #7e0b0b;
 }
 
 .item::after {
   content: "";
   position: absolute;
-  left: 9px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  border: 2px solid black;
+  left: -6px;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #7e0b0b;
   border-radius: 50%;
-  margin-left: -16px;
+  background-color: #fff;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item h3 {
+  margin-top: 5px;
 }
 
 #projects {
@@ -166,6 +190,9 @@ body {
 .my-projectcol:hover {
   background: #1e2232;
   color: #fff;
+}
+.my-projectcol:hover .__h2 {
+  color: #2ecc71;
 }
 
 /* skill bar css begin */
@@ -298,7 +325,7 @@ a {
   font-weight: 500;
 }
 #contact-list li a:hover {
-  color: #dc153d;
+  color: #7e0b0b;
 }
 
 .myalert {
